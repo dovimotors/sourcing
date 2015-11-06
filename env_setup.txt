@@ -1,0 +1,48 @@
+Instructions for setting up a application project
+
+
+Setup Python and apps dir
+Ensure that python executable is in the system path
+From the command prompt pip install virtualenv
+Ensure that c:\apps exists
+
+Setup github
+Go to github and log in
+jesse@dovimotors.com
+montego09
+Create a new repository with the project name
+Initialize with a readme and add a .gitignore for Python
+
+Clone the git repsitory from github
+Open the github command prompt app
+go to the apps directory
+Copy the reposity link from the github website
+run git clone [repository link]
+
+Setup the virtualenv for the project
+from the command prompt enter the apps dir
+run virtualenv [projectname]
+This will create a new virtual python environment in the project directory
+	***note that the project name must match the git repository name***
+
+Perform inital commit for the new project and push changes
+go into the project directory
+run git add . (this will add all changes to the repository)
+run git commit -m [comments in quotes] to commit the changes
+run git remote add github [repositorylink]
+git push github to push the changes to git hub
+
+Ready to start coding and installing packages
+cd into scripts
+./activate to get into the virtual environment
+
+For django applications
+cd in to the app directory
+run django-admin startproject [projectname]
+In the settings.py file change the timezone to America/New_York
+cd into the new app directory
+run python manage.py migrate
+add the db to the gitignore
+run python manage.py runserver to ensure everything is working
+
+
