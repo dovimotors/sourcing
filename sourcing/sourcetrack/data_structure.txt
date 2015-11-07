@@ -1,0 +1,7 @@
+Data structure
+
+interview
+	id
+	date
+	source
+	employee
