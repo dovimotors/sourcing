@@ -1,0 +1,8 @@
+{% if latest_interview_list %}
+	<ul>
+	{% for interview in latest_interview_list %}
+		<li><a href="/sourcetrack/{{interview.id}}/">{{interview.source}} - {{interview.int_date}} - {{interview.id}}</a></li>
+	{% endfor %}
+{% else %}
+	<p>No Interviews are available.</p>
+{% endif %}
